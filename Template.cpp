@@ -13,7 +13,10 @@
 #include "HelperFunctions.h"
 #include "CTVGraphicEffect.h"
 #include "CTVRenderSurface.h"
-//#include "CTVInternalObjects.h"
+#include "CTVInternalObjects.h"
+
+#include "CEGUI.h"
+#include "RendererModules/directx9GUIRenderer/d3d9renderer.h"
 
 CTVTextureFactory* pTexFactory;
 CTVLandscape* pLand;
@@ -55,13 +58,13 @@ CTVRenderSurface* RSReflection;
 CTVRenderSurface* RSRefraction;
 
 CTVGraphicEffect* pEffect;
-
+CTVInternalObjects* pInternal;
 
 //Setup TrueVision3D
 CTVEngine* pEngine;
 CTVInputEngine* pInput;
 CTVScene* pScene;
-    CTVGlobals* pGlobals;
+CTVGlobals* pGlobals;
 
 void render();
 void input();
@@ -96,10 +99,16 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     
     //Create the TVEngine
     pEngine = new CTVEngine();
+    pEngine->SetBetaKey("", "");
     pEngine->SetDebugFile("c:\\debug.txt");
     
     pEngine->Init3DWindowed(WindowHandle, true);
     //pEngine->Init3DFullscreen (1400,1050);
+
+    pInternal = new CTVInternalObjects();
+    CEGUI::DirectX9Renderer* myRenderer = new CEGUI::DirectX9Renderer(pInternal->GetDevice3D(), 0);
+    new CEGUI::System(myRenderer);
+
     
     pEngine->SetAngleSystem(cTV_ANGLE_DEGREE);
     pEngine->DisplayFPS(true);
@@ -112,7 +121,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     pScene->SetTextureFilter(cTV_FILTER_BILINEAR);
     
     pEffect = new CTVGraphicEffect();
-    
     // loading textures
     pTexFactory = new CTVTextureFactory();
     pTexFactory->LoadTexture("C:\\Media\\dirtandgrass.jpg", "LandTexture", -1, -1, cTV_COLORKEY_NO, true);
@@ -303,8 +311,8 @@ void render() {
     pPlayerActor->Render();
     pAtmos->Atmosphere_Render();
     
-//    CEGUI::System::getSingleton().renderGUI();
-
+    CEGUI::System::getSingleton().renderGUI();
+    pInternal->GetDevice3D()->SetRenderState(D3DRS_ZENABLE, D3DZB_TRUE);
     
     pEngine->RenderToScreen();					//Render the screen
 }
