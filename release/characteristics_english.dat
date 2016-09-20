@@ -1,0 +1,12 @@
+@STRINGS
+	@ENGLISH
+		"INTELLIGENCE" = "Intelligence"
+		"PERCEPTION" = "Perception"
+		"STRENGTH" = "Strength"
+		"STAMINA" = "Stamina"
+		"PRESENCE" = "Presence'
+		"COMMUNICATION" = "Communication"
+		"DEXTERITY" = "Dexterity"
+		"QUICKNESS" = "Quickness"
+	@END
+@END

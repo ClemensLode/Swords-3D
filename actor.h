@@ -3,21 +3,23 @@
 #include <windows.h>
 #include <math.h>
 #include <iostream>
-#include "CTVEngine.h"
-#include "CTVScene.h"
-#include "CTVInputEngine.h"
-#include "CTVTextureFactory.h"
-#include "CTVMaterialFactory.h"
-#include "CTVAtmosphere.h"
+//#include "CTVEngine.h"
+//#include "CTVScene.h"
+//#include "CTVInputEngine.h"
+//#include "CTVTextureFactory.h"
+//#include "CTVMaterialFactory.h"
+//#include "CTVAtmosphere.h"
 #include "CTVGlobals.h"
-#include "CTVMesh.h"
-#include "CTVLightEngine.h"
+//#include "CTVMesh.h"
+//#include "CTVLightEngine.h"
 #include "tv_types.h"
-#include "HelperFunctions.h"
-#include "CTVGraphicEffect.h"
-#include "CTVRenderSurface.h"
-#include "CTVInternalObjects.h"
+//#include "HelperFunctions.h"
+//#include "CTVGraphicEffect.h"
+//#include "CTVRenderSurface.h"
+//#include "CTVInternalObjects.h"
 #include <string>
+
+#define NEW_MOVEMENT_MODE
 
 class MyActor {
 	public:
@@ -28,9 +30,12 @@ class MyActor {
 		void doRun(float time_elapsed);
 		void doStrafeLeft(float time_elapsed);
 		void doStrafeRight(float time_elapsed);
-		void rotate(float y_angle);
+		const bool rotate(float y_angle);
 		void follow(const cTV_3DVECTOR* target_position);
 		void move(CTVLandscape* my_land, float time_elapsed);
+
+		void translateMovementKeys(bool up, bool down, bool left, bool right, bool run, bool back, float camera_direction, float time_elapsed);
+
 		void slowDown(float time_elapsed);
 		void checkAnimation();
 		void determineStatus();

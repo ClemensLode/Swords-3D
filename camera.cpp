@@ -50,6 +50,10 @@ const cTV_3DVECTOR* MyCamera::getDirection() const {
 	return pDirection;
 }
 
+const cTV_3DVECTOR* MyCamera::getPosition() const {
+	return pPosition;
+}
+
 cTV_3DVECTOR* MyCamera::getViewVector() const {
 	return pViewVector;
 }

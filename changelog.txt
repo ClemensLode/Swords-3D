@@ -1,0 +1,6 @@
+- 40h Einarbeitung in TV3D
+- 20h Installation / Konfiguration CEGUI
+- 20h Erste lauffaehige Version
+- 20h Verbesserung, inklusive erstem Menue, NPCs
+- 20h Verbesserung der Bewegung
+- 20h Ausbau der Charaktererstellung, korrekte Tastenuebergabe
