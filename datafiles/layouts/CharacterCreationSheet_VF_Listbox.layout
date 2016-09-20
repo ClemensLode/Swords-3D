@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window Type="TaharezLook/Listbox" Name="Listbox" >
+        <Property Name="Font" Value="fkp-16" />
+	<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+</Window>
+

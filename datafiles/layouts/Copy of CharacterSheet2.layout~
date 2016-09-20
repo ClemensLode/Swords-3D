@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VirtueFlawPointsLayout>
+<GUILayout >
+         <Window Type="DefaultWindow" Name="VirtuePoints" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,650},{0,400},{0,670}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet2/VirtuePoints/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Rem. Virtue Points :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet2/VirtuePoints/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="7" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,210},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+	<Window Type="DefaultWindow" Name="CharacterCreationSheet2/FlawPoints" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,680},{0,400},{0,700}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet2/FlawPoints/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Rem. Flaw Points :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet2/FlawPoints/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="7" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,210},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+    </Window>
+</VirtueFlawPointsLayout>

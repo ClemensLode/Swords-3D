@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/FrameWindow" Name="CharacterCreationSheet3" >
+        <Property Name="Font" Value="fkp-16" />
+        <Property Name="Text" Value="Character creation (physical virtues and flaws)" />
+        <Property Name="TitlebarFont" Value="fkp-16" />
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,420},{0,750}}" />
+        <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/Description" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Choose optional physical traits\n(appearance, basic bodily functions and constitution)" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,40},{0,400},{0,90}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+	</Window>
+
+        <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/1Virtues" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="+1 Virtues" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,100},{0,400},{0,120}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+    	</Window>
+        <Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/EnduringConstitution" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Enduring Constitution" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,125},{0,200},{0,140}}" />
+    	</Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Large" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Large" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,125},{0,400},{0,140}}" />
+    </Window>
+
+        <Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/LongWinded" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Long-Winded" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,145},{0,200},{0,160}}" />
+    	</Window>
+        <Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/RapidConvalescence" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Rapid Convalescence" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,145},{0,400},{0,160}}" />
+    	</Window>
+
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Tough" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Tough" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,165},{0,200},{0,180}}" />
+    	</Window>
+
+	<Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/3Virtues" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="+3 Virtues" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,195},{0,400},{0,215}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+    	</Window>
+
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/GiantBlood" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Giant Blood" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,220},{0,200},{0,235}}" />
+    	</Window>
+
+        <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/1Flaws" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="-1 Flaws" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,250},{0,400},{0,270}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+    	</Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Disfigured" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Disfigured" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,275},{0,200},{0,290}}" />
+        </Window>
+        <Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/EvilEye" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Evil Eye" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,275},{0,400},{0,290}}" />
+    	</Window>
+
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/FragileConstitution" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Fragile Constitution" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,295},{0,200},{0,310}}" />
+        </Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/MissingEar" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Missing Ear" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,295},{0,400},{0,310}}" />
+    	</Window>
+
+        <Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/MissingEye" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Missing Eye" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,315},{0,200},{0,330}}" />
+    	</Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Obese" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Obese" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,315},{0,400},{0,330}}" />
+    	</Window>
+
+        <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/2Flaws" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="-2 Flaws" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,365},{0,400},{0,385}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+    	</Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Clumsy" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Fragile Constitution" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,390},{0,200},{0,405}}" />
+        </Window>
+        <Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Decrepit" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Decrepit" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,390},{0,400},{0,405}}" />
+    	</Window>
+
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Hunchback" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Hunchback" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,410},{0,200},{0,425}}" />
+        </Window>
+        <Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Lame" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Lame" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,410},{0,400},{0,425}}" />
+    	</Window>
+
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/MissingHand" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Missing Hand" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,430},{0,200},{0,445}}" />
+        </Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/SmallFrame" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Small Frame" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,430},{0,400},{0,445}}" />
+    	</Window>
+
+        <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/3Flaws" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="-3 Flaws" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,460},{0,400},{0,480}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+    	</Window>
+
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Arthritis" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Arthritis" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,485},{0,200},{0,500}}" />
+        </Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Mute" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Mute" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,485},{0,400},{0,500}}" />
+    	</Window>
+
+
+        <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/4Flaws" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="-4 Flaws" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,515},{0,400},{0,535}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+    	</Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Dwarf" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Dwarf" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,540},{0,200},{0,555}}" />
+    	</Window>
+
+
+        <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/5Flaws" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="-5 Flaws" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,570},{0,400},{0,590}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+    	</Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/AgeQuickly" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Age Quickly" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,595},{0,200},{0,610}}" />
+        </Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Blind" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Blind" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,595},{0,400},{0,610}}" />
+    	</Window>
+	<Window Type="TaharezLook/Checkbox" Name="CharacterCreationSheet3/Enfeebled" >
+            <Property Name="Font" Value="fkp-16" />
+            <Property Name="Text" Value="Enfeebled" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,615},{0,200},{0,630}}" />
+        </Window>
+
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet3/VirtuePoints" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,650},{0,400},{0,670}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/VirtuePoints/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Rem. Virtue Points :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/VirtuePoints/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="7" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,210},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet3/FlawPoints" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,680},{0,400},{0,700}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/FlawPoints/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Rem. Flaw Points :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet3/FlawPoints/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="7" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,210},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet3/Navigation" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,720},{0,400},{0,740}}" />
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet3/PreviousPage" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Previous page" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet3/NextPage" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Next page" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,230},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

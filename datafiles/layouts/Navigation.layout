@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window Type="DefaultWindow" Name="Navigation" >
+	<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+	<Window Type="TaharezLook/Button" Name="Navigation/PreviousPage" >
+		<Property Name="Font" Value="fkp-16" />
+		<Property Name="Text" Value="Previous page" />
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+	</Window>
+	<Window Type="TaharezLook/Button" Name="Navigation/NextPage" >
+		<Property Name="Font" Value="fkp-16" />
+		<Property Name="Text" Value="Next page" />
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+		<Property Name="UnifiedAreaRect" Value="{{0,230},{0,0},{0,380},{0,20}}" />
+	</Window>
+</Window>

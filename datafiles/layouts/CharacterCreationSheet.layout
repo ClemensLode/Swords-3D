@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/FrameWindow" Name="CharacterCreationSheet" >
+        <Property Name="Font" Value="fkp-16" />
+        <Property Name="Text" Value="Character creation (basic stats)" />
+        <Property Name="TitlebarFont" Value="fkp-16" />
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,420},{0,500}}" />
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Name" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,50},{0,400},{0,70}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Name/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Name :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Editbox" Name="CharacterCreationSheet/Name/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="MaxTextLength" Value="32" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Points" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,330},{0,400},{0,350}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Points/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Rem. Points :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Points/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="7" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+    </Window>
+</Window>
+</GUILayout>

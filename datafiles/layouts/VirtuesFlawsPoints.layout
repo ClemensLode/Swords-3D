@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VirtueFlawPointsLayout>
+<Window Type="DefaultWindow" Name="VirtueFlawPoints" >	
+	<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />		
+	
+	<Window Type="DefaultWindow" Name="VirtueFlawPoints/VirtuePoints" >
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+		<Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{0,400},{0,20}}" />
+		<Window Type="TaharezLook/StaticText" Name="VirtueFlawPoints/VirtuePoints/Label" >
+			<Property Name="Font" Value="fkp-16" />
+			<Property Name="Text" Value="Rem. Virtue Points :" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="HorzFormatting" Value="RightAligned" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,20}}" />
+			<Property Name="BackgroundEnabled" Value="False" />
+		</Window>
+		<Window Type="TaharezLook/StaticText" Name="VirtueFlawPoints/VirtuePoints/Value" >
+			<Property Name="Font" Value="fkp-16" />
+			<Property Name="Text" Value="7" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0,210},{0,0},{0,300},{0,20}}" />
+			<Property Name="BackgroundEnabled" Value="False" />
+		</Window>
+	</Window>
+	<Window Type="DefaultWindow" Name="VirtueFlawPoints/FlawPoints" >
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+		<Property Name="UnifiedAreaRect" Value="{{0,20},{0,30},{0,400},{0,50}}" />
+		<Window Type="TaharezLook/StaticText" Name="VirtueFlawPoints/FlawPoints/Label" >
+			<Property Name="Font" Value="fkp-16" />
+			<Property Name="Text" Value="Rem. Flaw Points :" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="HorzFormatting" Value="RightAligned" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,20}}" />
+			<Property Name="BackgroundEnabled" Value="False" />
+		</Window>
+		<Window Type="TaharezLook/StaticText" Name="VirtueFlawPoints/FlawPoints/Value" >
+			<Property Name="Font" Value="fkp-16" />
+			<Property Name="Text" Value="7" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0,210},{0,0},{0,300},{0,20}}" />
+			<Property Name="BackgroundEnabled" Value="False" />
+		</Window>
+	</Window>
+</Window>
+</VirtueFlawPointsLayout>

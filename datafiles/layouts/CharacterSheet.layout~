@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/FrameWindow" Name="CharacterCreationSheet" >
+        <Property Name="Font" Value="fkp-16" />
+        <Property Name="Text" Value="Character creation (basic stats)" />
+        <Property Name="TitlebarFont" Value="fkp-16" />
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,420},{0,500}}" />
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Name" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,50},{0,400},{0,70}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Name/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Name :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Editbox" Name="CharacterCreationSheet/Name/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="MaxTextLength" Value="32" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Intelligence" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,90},{0,400},{0,110}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Intelligence/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Intelligence :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Intelligence/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="0 (average)" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Intelligence/AddButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="+" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,340},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Intelligence/SubtractButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="-" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Perception" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,120},{0,400},{0,140}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Perception/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Perception :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Perception/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="0 (average)" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Perception/AddButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="+" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,340},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Perception/SubtractButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="-" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Strength" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,150},{0,400},{0,170}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Strength/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Strength :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Strength/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="0 (average)" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Strength/AddButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="+" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,340},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Strength/SubtractButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="-" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Stamina" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,180},{0,400},{0,200}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Stamina/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Stamina :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Stamina/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="0 (average)" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Stamina/AddButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="+" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,340},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Stamina/SubtractButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="-" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Presence" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,210},{0,400},{0,230}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Presence/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Presence :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Presence/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="0 (average)" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Presence/AddButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="+" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,340},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Presence/SubtractButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="-" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Communication" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,240},{0,400},{0,260}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Communication/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Communication :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Communication/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="0 (average)" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Communication/AddButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="+" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,340},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Communication/SubtractButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="-" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Dexterity" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,270},{0,400},{0,290}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Dexterity/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Dexterity :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Dexterity/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="0 (average)" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Dexterity/AddButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="+" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,340},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Dexterity/SubtractButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="-" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Quickness" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,300},{0,400},{0,320}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Quickness/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Quickness :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Quickness/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="0 (average)" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Quickness/AddButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="+" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,340},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/Quickness/SubtractButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="-" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CharacterCreationSheet/Points" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,330},{0,400},{0,350}}" />
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Points/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Rem. Points :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="CharacterCreationSheet/Points/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="7" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+    </Window>
+	<Window Type="DefaultWindow" Name="CharacterCreationSheet/Navigation" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,20},{0,460},{0,400},{0,500}}" />    
+
+	        <Window Type="TaharezLook/Button" Name="CharacterCreationSheet/NextPage" >
+			<Property Name="Font" Value="fkp-16" />
+			<Property Name="Text" Value="Next page" />
+	                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        	        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+	        </Window>
+        	<Window Type="TaharezLook/Button" Name="CharacterCreationSheet/PreviousPage" >
+            		<Property Name="Font" Value="fkp-16" />
+			<Property Name="Text" Value="Previous page" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0,230},{0,0},{0,380},{0,20}}" />
+	        </Window>
+	</Window>
+</Window>
+</GUILayout>

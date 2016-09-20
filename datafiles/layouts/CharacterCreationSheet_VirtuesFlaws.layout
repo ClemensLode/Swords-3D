@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+<Window Type="TaharezLook/FrameWindow" Name="CharacterCreation/VirtuesFlaws" >
+	<Property Name="Font" Value="fkp-16" />
+	<Property Name="Text" Value="Character creation (Virtues and Flaws)" />
+	<Property Name="TitlebarFont" Value="fkp-16" />
+	<Property Name="InheritsAlpha" Value="False" />
+	<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+	<Property Name="TitlebarEnabled" Value="True" />
+	<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,420},{0,750}}" />
+
+	<Window Type="TaharezLook/StaticText" Name="CharacterCreation/VirtuesFlaws/Description" >
+		<Property Name="Font" Value="fkp-16" />
+		<Property Name="Text" Value="Select your Flaws and Virtues" />
+		<Property Name="FrameEnabled" Value="False" />
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+		<Property Name="UnifiedAreaRect" Value="{{0,20},{0,40},{0,400},{0,90}}" />
+		<Property Name="BackgroundEnabled" Value="False" />
+	</Window>
+</Window>
+</GUILayout>

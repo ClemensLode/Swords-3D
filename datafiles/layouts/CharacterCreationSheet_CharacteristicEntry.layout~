@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <Window Type="DefaultWindow" Name="Entry" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Window Type="TaharezLook/StaticText" Name="Entry/Label" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="Intelligence :" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="Entry/Value" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="0 (average)" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,160},{0,0},{0,300},{0,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="Entry/AddButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="+" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,310},{0,0},{0,340},{0,20}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="Entry/SubtractButton" >
+                <Property Name="Font" Value="fkp-16" />
+                <Property Name="Text" Value="-" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,350},{0,0},{0,380},{0,20}}" />
+            </Window>
+        </Window>
