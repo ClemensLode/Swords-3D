@@ -1,0 +1,36 @@
+# Project: 3d
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 3d_private.res
+OBJ  = stdafx.o Template.o $(RES)
+LINKOBJ  = stdafx.o Template.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -ltv3dc65 -mwindows  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = 3d.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before 3d.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "3d.exe" $(LIBS)
+
+stdafx.o: stdafx.cpp
+	$(CPP) -c stdafx.cpp -o stdafx.o $(CXXFLAGS)
+
+Template.o: Template.cpp
+	$(CPP) -c Template.cpp -o Template.o $(CXXFLAGS)
+
+3d_private.res: 3d_private.rc Template.rc 
+	$(WINDRES) -i 3d_private.rc --input-format=rc -o 3d_private.res -O coff 
