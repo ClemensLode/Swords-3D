@@ -15,8 +15,21 @@
 #include "CTVRenderSurface.h"
 #include "CTVInternalObjects.h"
 
-#include "CEGUI.h"
-#include "RendererModules/directx9GUIRenderer/d3d9renderer.h"
+#include <CEGUI.h>
+#include <CEGUIImageset.h>
+#include <CEGUISystem.h>
+#include <CEGUILogger.h>
+#include <CEGUISchemeManager.h>
+#include <CEGUIWindowManager.h>
+#include <CEGUIFactoryModule.h>
+#include <CEGUIWindow.h>
+#include <directx9GUIRenderer/d3d9renderer.h>
+
+CTVInternalObjects* TVInternal;
+CEGUI::Renderer* mGUIRenderer;
+CEGUI::System* mGUISystem;
+CEGUI::Window* mEditorGuiSheet;
+LPDIRECT3DDEVICE9 d3Device;
 
 CTVTextureFactory* pTexFactory;
 CTVLandscape* pLand;
@@ -58,13 +71,13 @@ CTVRenderSurface* RSReflection;
 CTVRenderSurface* RSRefraction;
 
 CTVGraphicEffect* pEffect;
-CTVInternalObjects* pInternal;
+
 
 //Setup TrueVision3D
 CTVEngine* pEngine;
 CTVInputEngine* pInput;
 CTVScene* pScene;
-CTVGlobals* pGlobals;
+    CTVGlobals* pGlobals;
 
 void render();
 void input();
@@ -99,16 +112,10 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     
     //Create the TVEngine
     pEngine = new CTVEngine();
-    pEngine->SetBetaKey("", "");
     pEngine->SetDebugFile("c:\\debug.txt");
     
     pEngine->Init3DWindowed(WindowHandle, true);
     //pEngine->Init3DFullscreen (1400,1050);
-
-    pInternal = new CTVInternalObjects();
-    CEGUI::DirectX9Renderer* myRenderer = new CEGUI::DirectX9Renderer(pInternal->GetDevice3D(), 0);
-    new CEGUI::System(myRenderer);
-
     
     pEngine->SetAngleSystem(cTV_ANGLE_DEGREE);
     pEngine->DisplayFPS(true);
@@ -121,6 +128,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     pScene->SetTextureFilter(cTV_FILTER_BILINEAR);
     
     pEffect = new CTVGraphicEffect();
+    
     // loading textures
     pTexFactory = new CTVTextureFactory();
     pTexFactory->LoadTexture("C:\\Media\\dirtandgrass.jpg", "LandTexture", -1, -1, cTV_COLORKEY_NO, true);
@@ -282,6 +290,50 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     pInput->Initialize(true, true);
 
     
+//This is placed at last in the InitTV3D sub just before the doLoop=true,
+// just init all stuff for TV3D you need and then do the GUI init
+//GUI TEst
+TVInternal = new CTVInternalObjects;
+d3Device = TVInternal->GetDevice3D();
+
+using namespace CEGUI;
+mGUIRenderer = new CEGUI::DirectX9Renderer(d3Device,0);
+mGUISystem = new CEGUI::System(mGUIRenderer);
+
+CEGUI::Logger::getSingleton().setLogFilename("cegui.log", true);
+CEGUI::Logger::getSingleton().setLoggingLevel(CEGUI::Insane);
+
+WindowManager& winMgr = WindowManager::getSingleton();
+
+SchemeManager::getSingleton().loadScheme("../datafiles/schemes/TaharezLook.scheme");
+mGUISystem->setDefaultMouseCursor("TaharezLook", "MouseArrow");
+FontManager::getSingleton().createFont("../datafiles/fonts/Commonwealth-10.font");
+
+mEditorGuiSheet = (DefaultWindow*)winMgr.createWindow("DefaultWindow", "Root");
+
+System::getSingleton().setGUISheet(mEditorGuiSheet );
+
+FrameWindow* wnd = (FrameWindow*)winMgr.createWindow("TaharezLook/FrameWindow", "Demo Window");
+
+mEditorGuiSheet->addChildWindow(wnd);
+wnd->setPosition(Point(0.25f, 0.25f));
+wnd->setSize(Size(0.5f, 0.5f));
+wnd->setMaximumSize(Size(1.0f, 1.0f));
+wnd->setMinimumSize(Size(0.1f, 0.1f));
+wnd->setText("Hello World!");
+
+CEGUI::PushButton* quitButton = (CEGUI::PushButton*)CEGUI::WindowManager::getSingleton().createWindow("TaharezLook/Button", (CEGUI::utf8*)"Quit");
+mEditorGuiSheet->addChildWindow(quitButton);
+quitButton->setPosition(CEGUI::Point(0.35f, 0.45f));
+quitButton->setSize(CEGUI::Size(0.3f, 0.1f));
+quitButton->setText("Quit");
+
+// END OF test GUI !
+
+
+    
+    
+    
     //Main loop
     MSG msg;
     while( msg.message!=WM_QUIT) {
@@ -312,7 +364,7 @@ void render() {
     pAtmos->Atmosphere_Render();
     
     CEGUI::System::getSingleton().renderGUI();
-    pInternal->GetDevice3D()->SetRenderState(D3DRS_ZENABLE, D3DZB_TRUE);
+
     
     pEngine->RenderToScreen();					//Render the screen
 }
@@ -460,7 +512,7 @@ void unload() {
     delete TheTree;
     delete pInput;
     delete pGlobals;
-//    delete TVInternal;
+    delete TVInternal;
     delete pEngine;
 }
 
